@@ -1,0 +1,7 @@
+graphhopper-nu:
+ build: .
+ volumes:
+  - ./data/:/data
+ ports:
+  - "8990:8989"
+ command: /graphhopper/start.sh
